@@ -95,7 +95,7 @@ class Homescreen extends StatelessWidget {
             child: ListView.builder(
               itemCount: todoProvider.todos.length,
               itemBuilder: (context, index) {
-                return Todotile(todo: Todoprovider.todos[index]);
+                return Todotile(todo: todoProvider.todos[index]);
               },
             ),
           ),

@@ -3,9 +3,5 @@ class Todo {
   String title;
   bool isDone;
 
-  Todo({
-    required this.id,
-    required this.title,
-    this.isDone = false,
-  })
+  Todo({required this.id, required this.title, this.isDone = false});
 }
