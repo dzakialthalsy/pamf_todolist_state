@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../Model/Todo.dart';
 
 class Todoprovider with ChangeNotifier {
-  // List todo untuk menampung data todo
+  // list todo untuk menampung data todo
   final List<Todo> _todos = [];
   int _nextId = 1;
   String _filter = 'semua';
@@ -18,7 +18,7 @@ class Todoprovider with ChangeNotifier {
 
   String get filter => _filter;
 
-  // function untuk menambahkan todo ke list
+  // method untuk menambahkan todo ke list
   void addTodo(String title) {
     _todos.add(Todo(id: _todos.length + 1, title: title));
     _nextId++;
